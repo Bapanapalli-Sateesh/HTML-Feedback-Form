@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FEEDBACK FORM</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+
+    <form action="https://httpbin.org/get" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" value="Name" minlength="3" maxlength="50" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="portfolio">Portfolio</label>
+                </td>
+                <td>
+                    <input type="url" name="portfolio" id="portfolio" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="favColor">Favorite Color</label>
+                </td>
+                <td>
+                    <input type="color" name="favColor" id="favColor">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="likeness">Likeness</label>
+                </td>
+                <td>
+                    <input type="range" name="likeness" id="likeness" min="1" max="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit" formaction="https://httpbin.org/post" formmethod="post">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
